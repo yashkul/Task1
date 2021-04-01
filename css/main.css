@@ -1,0 +1,21 @@
+/* body {
+  scroll-behavior: smooth;
+} */
+/* Bootstrap styling override */
+.carousel-inner {
+  height: 600px;
+}
+.navbar-brand {
+  font-size: 35px;
+}
+.collapse {
+  font-size: 20px;
+}
+.temp {
+  height: 100vh;
+  background-color: pink;
+}
+.abt {
+  background-color: lightgreen;
+  height: 100vh;
+}
