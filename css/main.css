@@ -1,4 +1,34 @@
 /* Bootstrap styling override */
+
+/* <!-- - - - - - - - - - - - - - - - - - - - - - -NAVBAR STYLING STARTS HERE - - - - - - - - - - - - - - - - - - - -  --> */
+
+.nav-link {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  /* display: block; */
+  width: 0;
+  height: 3px;
+  background-image: linear-gradient(
+    45deg,
+    hsl(239, 38%, 59%) 20%,
+    hsl(354, 62%, 40%) 100%
+  );
+  transition: width 0.5s;
+}
+.nav-link:hover::after {
+  width: 100%;
+  transition: width 0.5s;
+}
+
+/* <!-- - - - - - - - - - - - - - - - - - - - - - -NAVBAR STYLING STARTS HERE - - - - - - - - - - - - - - - - - - - -  --> */
+
 .carousel-inner {
   height: 100vh;
 }
