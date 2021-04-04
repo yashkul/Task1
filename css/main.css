@@ -24,7 +24,11 @@
 /*Client CSS */
 
 .client-container {
-  background-color: lightgoldenrodyellow;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../assets/img/client-bg.webp);
+  background-repeat: repeat-x repeat-y;
+  background-size: contain;
+
   height: 100vh;
   font-family: "Poppins", sans-serif;
   color: coral;
@@ -32,25 +36,26 @@
 
 .client-heading {
   font-size: 60px;
-  color: darksalmon;
-}
-
-.client-heading span{
-  font-style: italic;
-  font-size: 30px;
-  margin-left: 40px;
+  color: white;
+  text-align: center;
+  padding: 50px;
+  font-family: "Rosarivo", serif;
 }
 
 .profiles {
   display: flex;
   justify-content: space-around;
   margin: 20px 80px;
+  text-align: center;
 }
 
 .profile {
   flex-basis: 260px;
 }
 
+.profile {
+  min-width: 350px;
+}
 .profile .profile-img {
   height: 260px;
   width: 260px;
@@ -58,6 +63,10 @@
   filter: grayscale(100%);
   cursor: pointer;
   transition: 400ms;
+}
+.profile .profile-img:hover {
+  transform: scale(1.1);
+  border: solid 3px green;
 }
 
 .profile:hover .profile-img {
@@ -67,19 +76,21 @@
 .client-name {
   margin-top: 30px;
   font-size: 35px;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
 }
 
 .profile h5 {
-  font-size: 18px;
-  font-weight: 100;
-  letter-spacing: 3px;
-  color: #ccc;
+  text-align: center;
+  color: rgb(233, 199, 199);
+  font-size: 20px;
 }
 
 .profile p {
   font-size: 16px;
   margin-top: 20px;
   text-align: justify;
+  color: rgb(162, 190, 162);
 }
 
 @media only screen and (max-width: 1150px) {
@@ -119,4 +130,3 @@
     margin: 20px 10px 80px 10px;
   }
 }
-
