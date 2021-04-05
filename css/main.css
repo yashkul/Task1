@@ -233,7 +233,7 @@
 
 .heading {
   text-align: center;
-  padding: 80px;
+  padding: 50px;
   font-size: 50px;
   color: white;
 }
@@ -245,6 +245,7 @@
   grid-column-gap: 50px;
   grid-row-gap: 50px;
   padding-top: 30px;
+  padding-bottom: 76px;
 }
 .sec {
   padding: 20px;
