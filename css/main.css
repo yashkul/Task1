@@ -301,3 +301,78 @@ i {
     flex-direction: column;
   }
 }
+
+
+
+
+
+
+/* About Section CSS */
+
+
+.about__section{
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  grid-template-rows: 0.1fr 1fr;
+}
+
+.about__section  div {
+  border: 1px solid #000;
+}
+
+.grid__wrapper{
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+    'left right' 
+    
+  ;
+  width: 80%;
+}
+
+.left{
+  grid-area: left;
+  display: grid;
+  gap: 32px;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+    'leftside-top'  
+    'leftside-bottom'
+  ;
+}
+.right{
+  grid-area: right;
+  display: grid;
+  gap: 32px;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+    'rightside-top'  
+    'rightside-middle'  
+    'rightside-bottom'
+  ;
+}
+
+.ltop{
+grid-area: leftside-top;
+background: red;
+}
+.lbottom{
+grid-area: leftside-bottom;
+background: pink;
+}
+.rtop{
+grid-area: rightside-top;
+background: cyan;
+}
+.rmiddle{
+grid-area: rightside-middle;
+background: #c0ffc0;
+}
+.rbottom{
+grid-area: rightside-bottom;
+background: yellow;
+}
