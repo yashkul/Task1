@@ -358,21 +358,38 @@ i {
 
 .ltop{
 grid-area: leftside-top;
-background: rgb(127, 136, 127);
+background: rgb(208, 192, 238);
+}
+.ltop h1{
+  font-size: 20px;
+
 }
 .lbottom{
 grid-area: leftside-bottom;
-background: rgb(171, 185, 172);
+background: rgb(208, 192, 238);
+}
+.lbottom h1{
+  font-size: 20px;
 }
 .rtop{
 grid-area: rightside-top;
-background: rgb(132, 141, 133);
+background: rgb(208, 192, 238);
+}
+.rtop h1{
+  font-size: 20px;
+  
 }
 .rmiddle{
 grid-area: rightside-middle;
-background: rgb(176, 189, 176);
+background: rgb(208, 192, 238);
+}
+.rmiddle h1{
+  font-size: 20px;
 }
 .rbottom{
 grid-area: rightside-bottom;
-background: rgb(119, 129, 120);
+background: rgb(208, 192, 238);
+}
+.rbottom h1{
+  font-size: 20px;
 }
