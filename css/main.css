@@ -302,3 +302,95 @@ i {
     flex-direction: column;
   }
 }
+
+
+
+
+
+
+/* About Section CSS */
+
+
+.about__section{
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  grid-template-rows: 0.1fr 1fr;
+}
+
+.about__section  div {
+  border: 1px solid #000;
+}
+
+.grid__wrapper{
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+    'left right' 
+    
+  ;
+  width: 80%;
+}
+
+.left{
+  grid-area: left;
+  display: grid;
+  gap: 32px;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+    'leftside-top'  
+    'leftside-bottom'
+  ;
+}
+.right{
+  grid-area: right;
+  display: grid;
+  gap: 32px;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+    'rightside-top'  
+    'rightside-middle'  
+    'rightside-bottom'
+  ;
+}
+
+.ltop{
+grid-area: leftside-top;
+background: rgb(208, 192, 238);
+}
+.ltop h1{
+  font-size: 20px;
+
+}
+.lbottom{
+grid-area: leftside-bottom;
+background: rgb(208, 192, 238);
+}
+.lbottom h1{
+  font-size: 20px;
+}
+.rtop{
+grid-area: rightside-top;
+background: rgb(208, 192, 238);
+}
+.rtop h1{
+  font-size: 20px;
+  
+}
+.rmiddle{
+grid-area: rightside-middle;
+background: rgb(208, 192, 238);
+}
+.rmiddle h1{
+  font-size: 20px;
+}
+.rbottom{
+grid-area: rightside-bottom;
+background: rgb(208, 192, 238);
+}
+.rbottom h1{
+  font-size: 20px;
+}
