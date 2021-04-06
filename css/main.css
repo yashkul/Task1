@@ -429,17 +429,21 @@ li {
 
 
 /* -------------Blog------------- */
+.blog-main{
+  height: 90vh;
+}
 .col{
   padding: 60px;
    padding-bottom: 40px; 
-  /* margin-top: 50px; */
-  
+}
+.card-div{
+  padding-left: 50px;
+  padding-right:50px
 }
 .button{
   text-align: center;
 }
 .col:hover{
-
 transform: scale(1.02);
 }
 .heading{
