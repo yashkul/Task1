@@ -1,9 +1,10 @@
 /* Bootstrap styling override */
 
-/* <!-- - - - - - - - - - - - - - - - - - - - - - -NAVBAR STYLING STARTS HERE - - - - - - - - - - - - - - - - - - - -  --> */
 @import url("https://fonts.googleapis.com/css2?family=Rosarivo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Marvel:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rosarivo&family=Rubik:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap"); /* <!-- - - - - - - - - - - - - - - - - - - - - - -NAVBAR STYLING STARTS HERE - - - - - - - - - - - - - - - - - - - -  --> */
 
 .nav-link {
   position: relative;
@@ -42,16 +43,16 @@
   /* text-shadow: 0 0 8px rgb(67, 90, 223); */
   transition: 0.5s;
 }
-
-/* <!-- - - - - - - - - - - - - - - - - - - - - - -NAVBAR STYLING STARTS HERE - - - - - - - - - - - - - - - - - - - -  --> */
-
-@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
-
-.carousel-inner {
-  height: 100vh;
-}
 .navbar-brand {
   font-size: 35px;
+}
+/* <!-- - - - - - - - - - - - - - - - - - - - - - -NAVBAR STYLING ENDS HERE - - - - - - - - - - - - - - - - - - - -  --> */
+
+/* <!-- - - - - - - - - - - - - - - - - - - - - - -CAROUSEL STYLING STARTS HERE - - - - - - - - - - - - - - - - - - - -  --> */
+
+.carousel-inner {
+  margin-top: 10vh;
+  height: 90vh;
 }
 .collapse {
   font-size: 20px;
@@ -86,8 +87,6 @@
 .carousel-item > .carousel-caption > p {
   font-size: 20px;
 }
-/* <!-- - - - - - - - - - - - - - - - - - - - - - -CAROUSEL STYLING STARTS HERE - - - - - - - - - - - - - - - - - - - -  --> */
-
 .carousel-fade .carousel-item {
   opacity: 0;
   transition-duration: 0.6s;
@@ -154,14 +153,46 @@
 .profile {
   min-width: 350px;
 }
-.profile .profile-img {
+.profile .profile-img1 {
   height: 260px;
   width: 260px;
   border-radius: 50%;
   filter: grayscale(100%);
   cursor: pointer;
   transition: 400ms;
+  background-image: url("../assets/img/client1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
 }
+.profile .profile-img2 {
+  height: 260px;
+  width: 260px;
+  border-radius: 50%;
+  filter: grayscale(100%);
+  cursor: pointer;
+  transition: 400ms;
+  background-image: url("../assets/img/client2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+}
+.profile .profile-img3 {
+  height: 260px;
+  width: 260px;
+  border-radius: 50%;
+  filter: grayscale(100%);
+  cursor: pointer;
+  transition: 400ms;
+  background-image: url("../assets/img/client3.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+}
+
 .profile .profile-img:hover {
   transform: scale(1.1);
   border: solid 3px green;
@@ -267,7 +298,6 @@
   color: rgb(35, 99, 35);
   /* text-shadow: 2px 2px #00ff40; */
 }
-
 .main > p {
   color: black;
   opacity: 0.7;
@@ -290,107 +320,108 @@ i {
   margin-top: 20px;
 }
 
-@media screen and (max-width: 992px) {
-  .sec {
-    flex: 50%;
-  }
-}
-
-/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .sec {
-    flex-direction: column;
-  }
-}
-
-
-
-
-
-
 /* About Section CSS */
 
-
-.about__section{
-  height: 100vh;
+.about-heading {
+  padding-top: 60px;
+  font-size: 60px;
+  color: white;
+  text-align: center;
+  font-family: "Rosarivo", serif;
+}
+.about__section {
+  height: 92vh;
   display: grid;
   place-items: center;
   grid-template-rows: 0.1fr 1fr;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../assets/img/client-bg.webp);
+  background-repeat: repeat-x repeat-y;
+  background-size: contain;
 }
-
-.about__section  div {
-  border: 1px solid #000;
-}
-
-.grid__wrapper{
+.grid__wrapper {
   display: grid;
-  gap: 32px;
+  padding: 0 150px;
+  gap: 15px;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: 
-    'left right' 
-    
-  ;
-  width: 80%;
+  grid-template-areas: "left right";
 }
 
-.left{
+.left {
   grid-area: left;
   display: grid;
-  gap: 32px;
+  gap: 15px;
   grid-template-columns: auto;
   grid-template-rows: 1fr 1fr;
-  grid-template-areas: 
-    'leftside-top'  
-    'leftside-bottom'
-  ;
+  grid-template-areas:
+    "leftside-top"
+    "leftside-bottom";
 }
-.right{
+.right {
   grid-area: right;
   display: grid;
-  gap: 32px;
+  gap: 15px;
   grid-template-columns: auto;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: 
-    'rightside-top'  
-    'rightside-middle'  
-    'rightside-bottom'
-  ;
+  grid-template-areas:
+    "rightside-top"
+    "rightside-middle"
+    "rightside-bottom";
+}
+li {
+  list-style-type: none;
+}
+.ltop {
+  grid-area: leftside-top;
+  background: white;
+  font-family: "Lato", sans-serif;
+  padding-top: 20px;
+}
+.grid-heading {
+  font-family: "Lora", serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 3px;
+  color: green;
 }
 
-.ltop{
-grid-area: leftside-top;
-background: rgb(208, 192, 238);
+.lbottom {
+  grid-area: leftside-bottom;
+  background: white;
+  font-family: "Lato", sans-serif;
+  padding-right: 10px;
+  padding-top: 20px;
 }
-.ltop h1{
-  font-size: 20px;
+.lbottom > .grid-heading {
+  padding-bottom: 20px;
+}
+.rtop {
+  grid-area: rightside-top;
+  background: white;
+  font-family: "Lato", sans-serif;
+  padding-top: 10px;
+}
+.team {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
+  align-items: center;
+}
+.rtop > .grid-heading {
+  padding-bottom: 20px;
+}
+.rmiddle {
+  grid-area: rightside-middle;
+  background: white;
+  padding-bottom: 10px;
+  font-family: "Lato", sans-serif;
+  padding-top: 10px;
+}
 
-}
-.lbottom{
-grid-area: leftside-bottom;
-background: rgb(208, 192, 238);
-}
-.lbottom h1{
-  font-size: 20px;
-}
-.rtop{
-grid-area: rightside-top;
-background: rgb(208, 192, 238);
-}
-.rtop h1{
-  font-size: 20px;
-  
-}
-.rmiddle{
-grid-area: rightside-middle;
-background: rgb(208, 192, 238);
-}
-.rmiddle h1{
-  font-size: 20px;
-}
-.rbottom{
-grid-area: rightside-bottom;
-background: rgb(208, 192, 238);
-}
-.rbottom h1{
-  font-size: 20px;
+.rbottom {
+  grid-area: rightside-bottom;
+  background: white;
+  font-family: "Lato", sans-serif;
+  padding-top: 10px;
 }
