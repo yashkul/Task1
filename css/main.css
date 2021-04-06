@@ -425,3 +425,41 @@ li {
   font-family: "Lato", sans-serif;
   padding-top: 10px;
 }
+
+
+
+/* -------------Blog------------- */
+.col{
+  padding: 60px;
+   padding-bottom: 40px; 
+  /* margin-top: 50px; */
+  
+}
+.button{
+  text-align: center;
+}
+.col:hover{
+
+transform: scale(1.02);
+}
+.heading{
+color: black;
+padding: 10px;
+}
+.card-body> h5{
+color:black;
+}
+.heading> h5{
+margin-top: 50px;
+color: green;
+  font-size: 60px;
+  text-align: center;
+  font-family: "Rosarivo", serif;
+}
+img{
+max-height: 100%;
+max-width: 100%;
+width: 100%;
+height: 200px;
+}
+/* ------------------------------------------------------------ */
